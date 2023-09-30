@@ -24,13 +24,27 @@ require __DIR__ . '/data.php';
         <tr>
             <td>Last time champions</td>
             <?php foreach ($teams as $key => $value) : ?>
-                <td><?php echo $value['last-time-champions'] ?></td>
+                <td><?php echo $value['last-time-champions'] ?>
+                    <?php if ($value['last-time-champions'] == null) {
+                        echo 'N/A';
+                    } ?></td>
             <?php endforeach; ?>
         </tr>
         <tr>
             <td>City</td>
             <?php foreach ($teams as $key => $value) : ?>
                 <td><?php echo $value['city'] ?></td>
+            <?php endforeach; ?>
+        </tr>
+        <tr>
+            <td>Nickname</td>
+            <?php foreach ($teams as $key => $value) : ?>
+                <td><?php if ($value['nickname'] == true) {
+                        echo $value['nickname'];
+                    } else {
+                        echo "N/A";
+                    };
+                    ?></td>
             <?php endforeach; ?>
         </tr>
         <tr>
@@ -41,56 +55,3 @@ require __DIR__ . '/data.php';
         </tr>
     </tbody>
 </table>
-
-<!--
-<table>
-    <thead>
-        <tr>
-            <th>Teams</th>
-            
-        </tr>
-    </thead>
-
-    <tbody>
-        <tr>
-            <td></td>
-        </tr>
-    </tbody>
-
-    <tfooter>
-
-    </tfooter>
-</table>
--->
-
-<!--
-<table>
-    <thead>
-        <tr>
-            <th colspan="2">October</th>
-            <th colspan="2">November</th>
-        </tr>
-    </thead>
-
-    <tbody>
-        <tr>
-            <td>Sales</td>
-            <td>Profit</td>
-            <td>Sales</td>
-            <td>Profit</td>
-        </tr>
-        <tr>
-            <td>$200,00</td>
-            <td>$50,00</td>
-            <td>$300,000</td>
-            <td>$70,000</td>
-        </tr>
-    </tbody>
-
-    <tfoot>
-        <tr>
-            <th colspan="4">November was more productive</th>
-        </tr>
-    </tfoot>
-</table>
--->
