@@ -18,6 +18,6 @@ $uniqueValues[] = array_unique($cityValues);
 
 foreach ($uniqueValues as $uniqueValue) :
 
-    echo implode(' ', $uniqueValue);
+    $cityValue = implode(' ', $uniqueValue);
 
 endforeach;
