@@ -1,13 +1,12 @@
 <?php
 
 require __DIR__ . '/data.php';
-require __DIR__ . '/number-of-teams.php';
 
 ?>
 
 <body>
     <table>
-        <caption><?php echo $totalTeams ?></caption>
+        <caption>Here are the teams</caption>
         <thead>
             <tr>
                 <th class="top" scope="col">Teams</th>
