@@ -21,7 +21,7 @@ require __DIR__ . '/data.php';
         <tbody>
             <?php foreach ($teams as $key => $value) : ?>
                 <tr>
-                    <td><?php echo $key ?></td>
+                    <td class="teams"><?php echo $key ?></td>
                     <td><?php echo $value['league'] ?></td>
                     <td><?php echo $value['last-time-champions'] ?>
                         <?php if ($value['last-time-champions'] == null) {
