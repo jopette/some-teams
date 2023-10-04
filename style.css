@@ -13,7 +13,7 @@ td, th {
     padding: 20px;
 }
 th {
-    background: brown;
+    background: #5a5dff;
     color: white;
     border-radius: 0;
     position: sticky;
@@ -27,5 +27,9 @@ tbody > tr:hover {
     background-color: #ffc107;
   }
 caption {
-    background:coral;
+    background:#a4ebff;
+    padding: 10px;
+}
+.teams {
+    background:#eaebff;
 }
