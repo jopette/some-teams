@@ -4,20 +4,8 @@ require __DIR__ . '/data.php';
 
 ?>
 
-<?php
+<?php foreach ($teams as $key => $value) :
 
-$cityValues = [];
-
-foreach ($teams as $key => $value) :
-
-    $cityValues[] = $value['city'];
-
-endforeach;
-
-$uniqueValues[] = array_unique($cityValues);
-
-foreach ($uniqueValues as $uniqueValue) :
-
-    echo implode(' ', $uniqueValue);
+    echo $value['city'] . ' ';
 
 endforeach;
