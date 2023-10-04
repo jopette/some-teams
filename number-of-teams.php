@@ -2,4 +2,4 @@
 
 require __DIR__ . '/data.php';
 
-echo "The total number of teams are " . count($teams);
+$totalTeams = "There are a total number of " . count($teams) . " teams";
