@@ -24,10 +24,13 @@ require __DIR__ . '/data.php';
                     <td class="teams"><?php echo $key ?></td>
                     <td><?php echo $value['league'] ?></td>
                     <td><?php echo $value['last-time-champions'] ?>
+                        <!--checks if an element is empty and prints replacement-->
                         <?php if ($value['last-time-champions'] == null) {
                             echo 'N/A';
-                        } ?></td>
+                        } ?>
+                    </td>
                     <td><?php echo $value['city'] ?></td>
+                    <!--prints replacement if an element is empty, otherwise prints nickname-->
                     <td><?php if (empty($value['nickname'])) {
                             echo 'N/A';
                         } else {
