@@ -6,7 +6,7 @@ require __DIR__ . '/data.php';
 
 <body>
     <table>
-        <caption>Here are the teams</caption>
+        <caption>SOME TEAMS</caption>
         <thead>
             <tr>
                 <th class="top" scope="col">Teams</th>
