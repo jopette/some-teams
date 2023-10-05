@@ -24,14 +24,15 @@ th {
     background: #322a8d;
 }
 tbody > tr:hover {
-    background-color: #ffc107;
+    background-color: #95a5f7;
   }
 caption {
-    background:#a4ebff;
+    background: #eaebff;
+    border: 1px solid #b9b9cf;
     padding: 10px;
     font-size: 30px;
-    font-family:Arial, Helvetica, sans-serif;
-    color:#5b5dff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5b5dff;
 }
 .teams {
     background:#eaebff;
