@@ -1,9 +1,3 @@
-<?php
-
-require __DIR__ . '/data.php';
-
-?>
-
 <body>
     <table>
         <caption>SOME TEAMS</caption>

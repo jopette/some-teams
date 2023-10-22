@@ -1,11 +1,5 @@
 <?php
 
-require __DIR__ . '/data.php';
-
-?>
-
-<?php
-
 //fetches the city values and fills an empty array
 foreach ($teams as $key => $value) :
 
